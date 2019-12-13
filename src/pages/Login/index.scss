@@ -1,0 +1,37 @@
+@import '../../assets/styles/var.scss';
+$loginBoxWidth: 300px;
+.login {
+  position: absolute;
+  width: $loginBoxWidth;
+  height: 200px;
+  left: 50%;
+  margin-left: -$loginBoxWidth / 2;
+  top: 150px;
+  .title {
+    text-align: center;
+    font-size: 28px;
+  }
+  .formItem {
+    :global(.ant-form-item-children) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .input {
+      width: 147px;
+    }
+    img {
+      width: 73px;
+      height: auto;
+      cursor: pointer;
+      display: block;
+    }
+  }
+  .linkBtnBar {
+    display: flex;
+    justify-content: space-between;
+    .rightText {
+      text-align: right;
+    }
+  }
+}
